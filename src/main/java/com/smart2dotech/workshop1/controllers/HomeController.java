@@ -8,6 +8,7 @@ public class HomeController {
 	@RequestMapping("/information") // ce que je tape dans l'url
 	public String info()
 	{
+		System.out.println("hoxddsdsdoo");
 		return "home/info";  // le nom de la vue sous template /home
 	}
 	
