@@ -12,6 +12,36 @@
 <h3 th:text="${test}"></h3>
 <ul>
 <li th:each="names: ${List}" th:text="${names}"></li>
+<h4 align="center">Formulaire d'inscription</h4>
+	<form method="POST" th:action="@{/result}">
+		<div class="container">
+			<div class="row" style="margin-bottom:5px">
+				<div class="col-6" align="right">
+					<label>Nom</label>
+				</div>
+				<div class="col-6">
+					<input type="text" name="nom"  class="form-control"/>
+				</div>
+			</div>
+			<div class="row" style="margin-bottom:5px">
+				<div class="col-6" align="right">
+					<label>Email</label>
+				</div>
+				<div class="col-6">
+					<input type="text" name="email"  class="form-control"/>
+				</div>
+			</div>
+			
+			<div class="row" >
+				<div class="col-6" align="right">
+					
+				</div>
+				<div class="col-6">
+					<input type="submit" value="Envoyer"  class="btn btn-success"/>
+				</div>
+			</div>
+		</div>
+	</form>
 
 </ul>
 </body>
